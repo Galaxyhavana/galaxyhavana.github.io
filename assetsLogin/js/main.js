@@ -34,7 +34,7 @@ window.onload = function() {
 function verificaSessao(){
       if (sessionStorage.getItem("verificado") === 'true') {
         console.log('sessao verificada')
-        window.location.href = '../galaxy/gerenciamento.html';
+        window.location.href = 'gerenciamento.html';
         // Não está na localStorage
       }
 }
@@ -52,7 +52,7 @@ function verificaSessao(){
 
     if(acessos.includes(password)){
         sessionStorage.setItem('verificado', 'true');
-        window.location.href = "../galaxy/gerenciamento.html";
+        window.location.href = "gerenciamento.html";
         
     }else{
         alert('Acesso Negado!! Falar com Brasileiro')
